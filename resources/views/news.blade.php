@@ -32,8 +32,6 @@
     <input type="submit" name="edit_news" value="Update" class="btn btn-success">
     @endif
 </div>
-
-
 </form>
 
 <p>&nbsp;</p>
@@ -72,15 +70,11 @@
       <a href="/newsedit/{{ $getsinglenews->id }}"><span style="color:##0d6efd;">Edit</span></a>
       <a href="/newsdelete/{{ $getsinglenews->id }}" onclick="return confirm('Are you sure you want to delete this item?');"><span style="color:#ff0000;">Delete</span></a>
       </td>
-
     </tr>
 </tbody>
 <?php $i++ ?>
 @endforeach
 @endif
-
-
-
 </table>
 
 
