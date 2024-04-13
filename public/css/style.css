@@ -1,0 +1,12 @@
+.header{
+    height:100px;
+    background:#ff0000;
+}
+.body{
+    height:100px;
+    background:#000000;
+}
+.footer{
+    height:100px;
+    background:#f0f0f0;
+}
