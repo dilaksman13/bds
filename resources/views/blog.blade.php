@@ -4,7 +4,7 @@
 
 <div>
   @if(!empty($success))
-    <div class="alert alert-success"> {{ $success }}</div>
+    <div class="alert alert-success"> {{ $success }}</div> <!--success message-->
   @endif
 </div>
 
