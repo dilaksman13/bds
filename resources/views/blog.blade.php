@@ -33,16 +33,14 @@
     </div>
 </form>
 
-
-
 <p>&nbsp;</p>
 
 <form method="post" action="blogsearch" >
 @csrf
-<div class="row">
-<div class="col-lg-4"><input type="text" name="searchv" placeholder="search" class="form-control me-2"></div>
-<div class="col-lg-4"><input type="submit" name="search" value="search" class="btn btn-outline-success"> </div>
-</div>
+  <div class="row">
+    <div class="col-lg-4"><input type="text" name="searchv" placeholder="search" class="form-control me-2"></div>
+    <div class="col-lg-4"><input type="submit" name="search" value="search" class="btn btn-outline-success"> </div>
+  </div>
 </form>
 
 <table class="table">
@@ -67,19 +65,14 @@
       <td>{{ $getblog->email }}</td>
       <td>{{ $getblog->contact }}</td>
       <td>
-      
       <a href="/blogedit/{{ $getblog->id }}"><span style="color:##0d6efd;">Edit</span></a>
       <a href="/blogdelete/{{ $getblog->id }}"><span style="color:#ff0000;">Delete</span></a>
-
       </td>
     </tr>
 </tbody>
 <?php $i++ ?>
 @endforeach
 @endif
-
-
-
 </table>
 
 
