@@ -11,10 +11,7 @@
 
 <form method="post" @if (!empty($getnewsone)) action="/editnewsform"  @else action="/newsform"  @endif  >
     @csrf
-
     <input type="hidden" name="id" @if (!empty($getnewsone)) value="{{ $getnewsone->id }}" @endif >
-   
-
 <div>
     <input name="title" @if (!empty($getnewsone)) value="{{ $getnewsone->title }}" @endif  placeholder="Type Title Here" class="form-control me-2">
 </div>
@@ -72,10 +69,8 @@
       <td>{{ $getsinglenews->email }}</td>
       <td>{{ $getsinglenews->contact }}</td>
       <td>
-
       <a href="/newsedit/{{ $getsinglenews->id }}"><span style="color:##0d6efd;">Edit</span></a>
       <a href="/newsdelete/{{ $getsinglenews->id }}" onclick="return confirm('Are you sure you want to delete this item?');"><span style="color:#ff0000;">Delete</span></a>
-     
       </td>
 
     </tr>

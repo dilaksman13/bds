@@ -74,6 +74,4 @@
 @endforeach
 @endif
 </table>
-
-
 @endsection
